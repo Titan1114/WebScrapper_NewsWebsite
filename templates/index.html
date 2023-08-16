@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="position: relative; margin: auto;">
+        <img id="bg" src="" alt="not_found" class="src" style="height: 90vh; width: 70vw">
+        <span style="height: 90vh; width: 60vw; position: absolute; top: 20vh; left: 5vw; white-space: pre-line; color: white;">
+            {{News|safe}}
+        </span>
+    </div>
+</body>
+<script>
+    var newbg=document.getElementById("bg");
+    var background= new Image();
+    background.src="static/images/"+(Math.floor(Math.random()*1)+1) +".jpg";
+    newbg.src=background.src;
+</script>
+</html>
